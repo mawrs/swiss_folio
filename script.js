@@ -249,4 +249,24 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    const passwordOverlays = document.querySelectorAll('.password-overlay');
+    
+    passwordOverlays.forEach(overlay => {
+        const submitBtn = overlay.querySelector('.password-submit');
+        const input = overlay.querySelector('.password-input');
+        const error = overlay.querySelector('.password-error');
+        const projectContent = overlay.nextElementSibling;
+        
+        submitBtn.addEventListener('click', () => {
+            // Replace 'your_password' with the actual password
+            if (input.value === 'your_password') {
+                overlay.style.display = 'none';
+                projectContent.style.display = 'block';
+                error.style.display = 'none';
+            } else {
+                error.style.display = 'block';
+            }
+        });
+    });
 });

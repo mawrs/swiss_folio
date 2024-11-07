@@ -816,20 +816,43 @@
                 <!-- Project 4 (Arcoscan) -->
                 <div class="tab-pane fade" id="project4" role="tabpanel">
                     <div class="password-overlay" data-project="arcoscan">
-                        <div class="password-content">
+                        <div class="password-content text-center">
                             <h3 class="mb-4">Protected Content</h3>
                             <p class="mb-4">Please enter the password to view this project.</p>
                             <div class="password-form">
                                 <div class="d-flex gap-2 justify-content-center">
-                                    <input type="password" class="form-control password-input" placeholder="Enter password">
+                                    <input type="password" class="form-control password-input" placeholder="Enter password" style="max-width: 200px;">
                                     <button class="password-submit btn btn-primary">Submit</button>
                                 </div>
                                 <p class="password-error text-danger mt-3" style="display: none;">Incorrect password</p>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="project-content" style="display: none;">
-                        <!-- Rest of Arcoscan content -->
+                        <!-- View Toggle -->
+                        <div class="view-toggle mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input view-toggle-input" type="checkbox" role="switch" id="viewToggleArcoscan">
+                                <label class="form-check-label" for="viewToggleArcoscan">Show Full Case Study</label>
+                            </div>
+                        </div>
+
+                        <!-- Summary View -->
+                        <div class="project-view summary-view">
+                            <h3>Arcoscan: Biometric Age Verification Platform</h3>
+                            <div class="project-images mb-4">
+                                <img src="images/construction.png" alt="Arcoscan Summary" class="img-fluid rounded shadow-sm mb-2">
+                            </div>
+                        </div>
+
+                        <!-- Case Study View -->
+                        <div class="project-view case-study-view" style="display: none;">
+                            <h3>Arcoscan: Biometric Age Verification Platform</h3>
+                            <div class="project-images mb-4">
+                                <img src="images/construction.png" alt="Arcoscan Case Study" class="img-fluid rounded shadow-sm mb-2">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -859,122 +882,17 @@
 
                         <!-- Summary View -->
                         <div class="project-view summary-view">
-                            <h3>The Promontory</h3>
-                            <h4 class="text-muted mb-4">LinkedIn for Investors</h4>
-                            
+                            <h3>The Promontory: LinkedIn for Investors</h3>
                             <div class="project-images mb-4">
-                                <img src="images/promontory-logo.png" alt="Promontory Logo" class="img-fluid rounded shadow-sm mb-2">
-                            </div>
-                            
-                            <!-- Objective -->
-                            <div class="summary-section mb-4">
-                                <h5>Objective</h5>
-                                <p>Create the "LinkedIn for Investors" by building a platform that brings clarity and connection to the complex world of fund data.</p>
-                            </div>
-
-                            <!-- Key Contributions -->
-                            <div class="summary-section mb-4">
-                                <h5>Key Contributions</h5>
-                                <ul>
-                                    <li class="mb-3">
-                                        <strong>Platform Design:</strong> Led the design of an intuitive interface for complex startup data.
-                                    </li>
-                                    <li class="mb-3">
-                                        <strong>User Research:</strong> Conducted extensive research to understand GP and LP needs.
-                                    </li>
-                                    <li class="mb-3">
-                                        <strong>Cross-functional Leadership:</strong> Collaborated closely with engineering and CEO.
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Impact -->
-                            <div class="summary-section mb-4">
-                                <h5>Impact</h5>
-                                <ul>
-                                    <li class="mb-2">
-                                        $2M in funding raised
-                                    </li>
-                                    <li class="mb-2">
-                                        $20M company valuation
-                                    </li>
-                                    <li class="mb-2">
-                                        Significant market differentiation achieved
-                                    </li>
-                                </ul>
+                                <img src="images/construction.png" alt="Promontory Summary" class="img-fluid rounded shadow-sm mb-2">
                             </div>
                         </div>
 
                         <!-- Case Study View -->
                         <div class="project-view case-study-view" style="display: none;">
-                            <h3>The Promontory</h3>
-                            <h4 class="text-muted mb-4">LinkedIn for Investors</h4>
-                            
+                            <h3>The Promontory: LinkedIn for Investors</h3>
                             <div class="project-images mb-4">
-                                <img src="images/promontory-logo.png" alt="Promontory Logo" class="img-fluid rounded shadow-sm mb-2">
-                            </div>
-                            
-                            <!-- Introduction -->
-                            <div class="case-study-section mb-5">
-                                <h4>Revolutionizing Investor Networking: The Promontory Story</h4>
-                                <p>As the Lead Designer at The Promontory, I spearheaded an ambitious project to create the "LinkedIn for Investors." Our vision was to bring clarity and connection to the complex world of fund data, addressing the limitations of existing platforms like PitchBook, Crunchbase, and CB Insights.</p>
-                            </div>
-
-                            <!-- Challenge -->
-                            <div class="case-study-section mb-5">
-                                <h4>Standing Out in a Saturated Market</h4>
-                                <p>The landscape of startup data platforms was already crowded, presenting us with a multifaceted challenge:</p>
-                                <ul>
-                                    <li><strong>Differentiation:</strong> We needed to create a platform that offered unique value in a market saturated with established players.</li>
-                                    <li><strong>Data Accuracy:</strong> Our platform had to provide more comprehensive and accurate data than our competitors to truly stand out.</li>
-                                    <li><strong>User Experience:</strong> We aimed to design an intuitive interface that could make complex startup data easily digestible and shareable.</li>
-                                    <li><strong>Targeted Features:</strong> Our solution needed to cater specifically to the needs of both General Partners (GPs) and Limited Partners (LPs).</li>
-                                    <li><strong>Balancing Depth and Usability:</strong> We had to strike a delicate balance between providing in-depth information and maintaining a user-friendly design to encourage adoption and regular use.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Process -->
-                            <div class="case-study-section mb-5">
-                                <h4>Data-Driven Design and Strategic Collaboration</h4>
-                                <p>To tackle these challenges, we implemented a comprehensive strategy:</p>
-                                <ul>
-                                    <li><strong>Data Accuracy Focus:</strong> We developed robust data collection and verification processes, ensuring our platform offered the most accurate and comprehensive startup data available.</li>
-                                    <li><strong>User-Centric Design:</strong> Through extensive research and iterative design, we created an intuitive interface that presents complex data in easily digestible formats, tailored to the specific needs of investors.</li>
-                                    <li><strong>Collaborative Features:</strong> We implemented sharing capabilities that allow easy exchange of data and insights among GPs and LPs, fostering a collaborative investor community.</li>
-                                    <li><strong>Cross-Functional Collaboration:</strong> I worked closely with the head of engineering and CEO on a daily basis, ensuring our design aligned perfectly with the strategic roadmap and technical capabilities.</li>
-                                    <li><strong>Agile Development:</strong> We adopted an iterative approach, continuously refining the platform based on user feedback and emerging investor needs.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Results -->
-                            <div class="case-study-section mb-5">
-                                <h4>Validation and Growth</h4>
-                                <p>Our efforts yielded significant results:</p>
-                                <ul>
-                                    <li><strong>Successful Fundraising:</strong> We raised $2 million in funding, demonstrating strong investor confidence in our platform.</li>
-                                    <li><strong>High Valuation:</strong> The company achieved a valuation of $20 million, indicating substantial market potential and validating our approach.</li>
-                                    <li><strong>Continuous Improvement:</strong> We're currently focused on expanding our data sources to further enhance the platform's value proposition.</li>
-                                    <li><strong>Enhanced User Experience:</strong> We're streamlining the onboarding process to increase user adoption among investors, based on initial user feedback.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Lessons -->
-                            <div class="case-study-section mb-5">
-                                <h4>The Power of Focus and Collaboration</h4>
-                                <p>This project reinforced several crucial lessons:</p>
-                                <ul>
-                                    <li><strong>Data is King:</strong> In the world of investor platforms, the accuracy and comprehensiveness of data is paramount. Our focus on data quality set us apart from competitors.</li>
-                                    <li><strong>User-Centric Design Matters:</strong> By tailoring our design to the specific needs of investors, we created a platform that resonates with our target audience.</li>
-                                    <li><strong>Collaboration is Key:</strong> The close collaboration between design, engineering, and leadership was crucial in aligning our product with both user needs and business goals.</li>
-                                    <li><strong>Iterative Development Wins:</strong> Our agile approach allowed us to continuously improve the platform based on real user feedback, ensuring we're always meeting evolving investor needs.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Conclusion -->
-                            <div class="case-study-section">
-                                <h4>Shaping the Future of Investor Networking</h4>
-                                <p>The success of The Promontory demonstrates the potential for innovative design to disrupt established markets and create new value for users. As we continue to enhance our data offerings and refine the user experience, we're poised to revolutionize how investors access, analyze, and share startup data.</p>
-                                <p>Our journey is far from over. With a strong foundation in place, we're excited to continue pushing the boundaries of what's possible in investor networking and startup data analysis. The Promontory is not just a platform; it's a new paradigm for how investors connect, collaborate, and make decisions in the fast-paced world of startups and venture capital.</p>
+                                <img src="images/construction.png" alt="Promontory Case Study" class="img-fluid rounded shadow-sm mb-2">
                             </div>
                         </div>
                     </div>
