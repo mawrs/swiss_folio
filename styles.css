@@ -1,0 +1,925 @@
+/* Custom styles */
+.hero {
+    min-height: 75vh;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: none;
+}
+
+/* Add custom colors if needed */
+:root {
+    --bs-primary: #0d6efd; /* Customize your primary color */
+}
+
+/* Project accordion styles */
+.project-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.accordion-button {
+    padding: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+}
+
+.accordion-button::after {
+    margin-left: 1rem;
+}
+
+/* Override Bootstrap's default focus styles */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+/* Add some spacing between accordion items */
+.accordion-item {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Update the accordion button hover state */
+.accordion-button:hover {
+    background-color: #f0f1f2;
+}
+
+/* Ensure the hover state persists when expanded */
+.accordion-button:not(.collapsed):hover {
+    background-color: #f0f1f2;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #212529;
+    color: #fff;
+    border-top: none;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.footer .text-muted {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.footer .btn-outline-primary {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer .btn-outline-primary:hover {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.footer .bi {
+    font-size: 1.25rem;
+}
+
+/* Testimonial styles */
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.bi-quote {
+    opacity: 0.2;
+}
+
+/* Optional: Add a subtle gradient to the background */
+#testimonials {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.project-image-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image-container img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 56px; /* Match this exactly to your navbar height */
+    z-index: 1020;
+    background: white;
+    margin-top: 0; /* Remove any default margin */
+    padding-top: 0; /* Remove any default padding */
+}
+
+/* Optional: Add shadow when sticky */
+.sticky-header .accordion-button {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Ensure the sticky header stays above the content */
+.accordion-collapse {
+    position: relative;
+    z-index: 1010;
+}
+
+/* Optional: Adjust text sizes for better fit */
+.hero .display-4 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero .lead {
+    font-size: 1.1rem;
+}
+
+/* Ensure no gap in the background */
+.accordion {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* About Hero Styles */
+.about-hero {
+    min-height: 40vh;
+    background-color: #f8f9fa;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: 50%;
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: 4px solid white;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    right: auto;
+    left: -10px;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+    }
+    
+    .timeline-dot {
+        left: -10px;
+        right: auto;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: -10px;
+    }
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+.about-content a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Override for hero section */
+.hero h1, 
+.hero h2, 
+.hero h3, 
+.hero h4, 
+.hero h5, 
+.hero h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Add these styles */
+.hero-headshot {
+    width: 100px;
+    height: 100px; 
+    margin-left: 5px; 
+    object-fit: cover;
+    transform: rotate(5deg);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.hero-headshot:hover {
+    transform: rotate(0deg);
+}
+
+.hero-headshot.expanded {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    transform: rotate(0deg);
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Add hover effect for expanded state */
+.hero-headshot.expanded:hover {
+    transform: rotate(2deg); /* Subtle rotation on hover */
+    box-shadow: 0 0 25px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+}
+
+.hero-image-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 991px) {
+    .hero-headshot.expanded {
+        width: 90vw;
+        max-width: 400px;
+    }
+}
+
+/* Add this to your existing styles */
+.gradient-text {
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #5bc3e6; /* Fallback color */
+    display: inline; /* Ensure gradient text flows properly within highlight */
+}
+
+/* Password Protection Styles - consolidated version */
+.password-overlay {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 2rem;
+    margin: 0;
+}
+
+.password-content {
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.password-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.password-submit {
+    padding: 12px 24px;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.password-error {
+    margin-top: 1rem;
+    color: #dc3545;
+    font-size: 0.9rem;
+    display: none;
+}
+
+/* Project Tabs Styling */
+.nav-tabs {
+    border-bottom: none;
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+}
+
+.nav-tabs .nav-link {
+    width: 100%;
+    border: none;  /* Remove all borders by default */
+    border-bottom: 1px solid #dee2e6;  /* Only keep bottom border */
+    padding: 1rem 1.25rem;
+    color: #6c757d;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #dee2e6;
+    border-bottom-color: #dee2e6;
+    color: #cb3631;
+}
+
+.nav-tabs .nav-link.active {
+    color: #cb3631;
+    background-color: #fff;
+    border: 1px solid #dee2e6; /* Add all borders for active tab */
+    border-bottom: 1px solid #fff; /* White bottom border to hide content border */
+}
+
+.project-thumbnail {
+    object-fit: cover;
+}
+
+/* Add some spacing to the tab content */
+.tab-content {
+    border: 1px solid #dee2e6;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.tab-pane {
+    transition: opacity 0.2s ease;
+    background: white;
+    min-height: 400px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: none; /* Hide by default */
+    padding: 0; /* Remove any padding from tab-pane */
+}
+
+.tab-pane.active {
+    display: block; /* Show when active */
+}
+
+.tab-pane.fade {
+    opacity: 0;
+}
+
+.tab-pane.fade.show {
+    opacity: 1;
+}
+
+/* Ensure smooth transitions between tabs */
+.tab-pane {
+    transition: opacity 0.2s ease;
+    background: white;
+    min-height: 400px; /* Set minimum height to prevent collapse */
+}
+
+/* Project Content Styling */
+.project-content {
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    min-height: 400px;
+}
+
+.project-content h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.project-content .lead {
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.project-images {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.project-images img:hover {
+    opacity: 0.9;
+}
+
+.project-images img:last-child {
+    margin-bottom: 0;
+}
+
+/* Password Overlay Styling */
+.password-overlay {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Sticky Tabs Styling */
+.sticky-tabs-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 0;
+    margin-bottom: 0;
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.sticky-tabs-container.is-sticky {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #212529 !important; /* Force dark background */
+}
+
+/* Update tab styles when sticky */
+.sticky-tabs-container.is-sticky .nav-tabs {
+    border-bottom-color: #373b3e !important;
+}
+
+.sticky-tabs-container.is-sticky .nav-link {
+    background-color: #212529 !important;
+    color: #8c959d !important;
+    border-color: transparent !important;
+}
+
+.sticky-tabs-container.is-sticky .nav-link:hover {
+    color: #fff !important;
+    border-color: #373b3e !important;
+}
+
+.sticky-tabs-container.is-sticky .nav-link.active {
+    color: #fff !important;
+    background-color: #2c3034 !important;
+    border-color: #373b3e !important;
+    border-bottom-color: #2c3034 !important;
+}
+
+/* Project tab icons */
+.nav-tabs .nav-link img {
+    width: 48px;
+    height: 32px;
+    margin-right: 0.75rem;
+    object-fit: contain;
+}
+
+/* Modal styling */
+#imageModal .modal-dialog {
+    max-width: 90vw;
+}
+
+#imageModal .modal-content {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#imageModal .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1050;
+}
+
+#imageModal .modal-body img {
+    max-height: 85vh;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Ensure main content pushes footer down on short pages */
+main {
+    flex: 1 0 auto;
+}
+
+/* Add some spacing above the footer */
+.footer {
+    margin-top: 5rem;
+}
+
+.form-check-input {
+    cursor: pointer;
+    width: 3em;
+    background-color: #dee2e6; /* Default background when off */
+    border-color: transparent;
+}
+
+.form-check-input:checked {
+    background-color: #cb3631; /* Your highlight color when on */
+    border-color: #cb3631;
+}
+
+/* Optional: Add hover effect */
+.form-check-input:hover {
+    border-color: #cb3631;
+}
+
+/* Optional: Add focus style */
+.form-check-input:focus {
+    border-color: #cb3631;
+    box-shadow: 0 0 0 0.25rem rgba(203, 54, 49, 0.25); /* Subtle glow using the same color */
+}
+
+.form-check-label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.highlight {
+    background-color: #cb3631; /* Matching the hero background but with transparency */
+    padding: 0 0.2em; /* Add some padding around the text */
+    border-radius: 0.1em; /* Optional: slightly rounded corners */
+    display: inline-block; /* Ensures the background wraps properly */
+}
+
+/* Ensure proper stacking */
+.tab-pane > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Update tab content styling */
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-pane {
+    transition: opacity 0.2s ease;
+    background: white;
+    min-height: 400px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: none; /* Hide by default */
+}
+
+.tab-pane.active {
+    display: block; /* Show when active */
+}
+
+.tab-pane.fade {
+    opacity: 0;
+}
+
+.tab-pane.fade.show {
+    opacity: 1;
+}
+
+/* Ensure password overlay fits within tab borders */
+.password-overlay {
+    position: relative;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* Update nav tabs to ensure proper border connection */
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Tab container styling */
+.sticky-tabs-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+}
+
+/* Tab content styling */
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    background: white;
+}
+
+.tab-pane {
+    min-height: 400px;
+    padding: 20px;
+    background: white;
+}
+
+/* Nav tabs styling */
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Project content styling */
+.project-content {
+    height: 100%;
+    padding: 20px;
+    background: white;
+}
+
+/* Update tab navigation styles */
+.nav-tabs {
+    border-bottom: none;  /* Remove default bottom border */
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+}
+
+.nav-tabs .nav-link {
+    width: 100%;
+    border: none;  /* Remove all borders by default */
+    border-bottom: 1px solid #dee2e6;  /* Only keep bottom border */
+    padding: 1rem 1.5rem;
+    color: #6c757d;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    border-radius: 0;
+    margin-bottom: -1px; /* Pull tabs down to overlap with content border */
+}
+
+.nav-tabs .nav-link.active {
+    color: #cb3631;
+    background-color: #fff;
+    border: 1px solid #dee2e6; /* Add all borders for active tab */
+    border-bottom: 1px solid #fff; /* White bottom border to hide content border */
+}
+
+/* Update tab content styles */
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove duplicate borders from project content */
+.project-content {
+    padding: 2rem;
+    background: #fff;
+    border: none; /* Remove border since it's handled by tab-content */
+    min-height: 400px;
+}
+
+/* Update password overlay to fit within borders */
+.password-overlay {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* Add loading state styles */
+.tab-pane.loading {
+    position: relative;
+}
+
+.tab-pane.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #cb3631;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Add these styles for testimonial cards */
+.testimonial-card {
+    height: 100%;
+    display: flex;
+}
+
+.testimonial-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
+}
+
+.testimonial-card .card-text {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+/* Parent container style */
+#testimonials .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#testimonials .col-md-3 {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card .bi-quote {
+    opacity: 0.2;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card .d-flex {
+    margin-bottom: 1.5rem;
+}
+
+/* Social Media Link Hover States */
+.social-links a {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+    color: white;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* Make icons slightly larger */
+.social-links .bi {
+    font-size: 1.25rem;
+}
+
+/* Back to top link hover state */
+.footer .text-md-end .text-muted:hover {
+    color: #ffffff !important; /* Using full white */
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.footer .text-md-end .text-muted {
+    transition: all 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.75) !important;
+}

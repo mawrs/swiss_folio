@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - UX Design Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Add this after the Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="display-4" style="font-family: 'Bebas Neue', sans-serif;">
+                            Hi, I'm 
+                            <span class="name-container">
+                                Martin Tejeda
+                                <img src="/images/headshot.png" alt="Martin Tejeda" class="hero-headshot">
+                            </span>
+                            . I convert <span class="highlight"><span class="gradient-text">user research</span></span> into <span class="highlight"><span class="gradient-text">end-to-end experiences</span></span> that bring in revenue for <span class="highlight"><span class="gradient-text">B2B & B2C companies</span></span>.
+                        </h1>
+                        <p class="lead">I've worked across the spectrum of tech - from scaling startups to global platforms like Facebook and Square. If you want to find our more about me and what I can do for you, contact me here.</p>
+                        
+                        <!-- Added Social Media Links -->
+                        <div class="social-links mt-4">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="https://linkedin.com/in/mawrs" 
+                                       class="text-decoration-none text-white" 
+                                       target="_blank"
+                                       data-bs-toggle="tooltip" 
+                                       data-bs-placement="bottom" 
+                                       title="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                        <span class="visually-hidden">LinkedIn</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item ms-3">
+                                    <a href="https://twitter.com/mawrs" 
+                                       class="text-decoration-none text-white" 
+                                       target="_blank"
+                                       data-bs-toggle="tooltip" 
+                                       data-bs-placement="bottom" 
+                                       title="Twitter">
+                                        <i class="bi bi-twitter-x"></i>
+                                        <span class="visually-hidden">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item ms-3">
+                                    <a href="https://github.com/mawrs" 
+                                       class="text-decoration-none text-white" 
+                                       target="_blank"
+                                       data-bs-toggle="tooltip" 
+                                       data-bs-placement="bottom" 
+                                       title="GitHub">
+                                        <i class="bi bi-github"></i>
+                                        <span class="visually-hidden">GitHub</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item ms-3">
+                                    <a href="images/resume.pdf" 
+                                       class="text-decoration-none text-white" 
+                                       target="_blank"
+                                       data-bs-toggle="tooltip" 
+                                       data-bs-placement="bottom" 
+                                       title="Resume">
+                                        <i class="bi bi-file-earmark-text"></i>
+                                        <span class="visually-hidden">Resume</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 hero-image-area">
+                    <!-- This is where the expanded image will appear -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Projects</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="sticky-tabs-container">
+                <ul class="nav nav-tabs" role="tablist">
+                    <!-- Facebook Tab -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active d-flex align-items-center" id="facebook-tab" data-bs-toggle="tab" data-bs-target="#project1" type="button" role="tab" aria-controls="project1" aria-selected="true">
+                            <img src="images/facebook/thumbnail.png" alt="Facebook" class="me-2">
+                            Facebook
+                        </button>
+                    </li>
+                    <!-- Square Tab -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex align-items-center" id="square-tab" data-bs-toggle="tab" data-bs-target="#project2" type="button" role="tab" aria-controls="project2" aria-selected="false">
+                            <img src="images/square/thumbnail.png" alt="Square" class="me-2">
+                            Square
+                        </button>
+                    </li>
+                    <!-- Slide Tab -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex align-items-center" id="slide-tab" data-bs-toggle="tab" data-bs-target="#project3" type="button" role="tab" aria-controls="project3" aria-selected="false">
+                            <img src="images/slide/thumbnail.png" alt="Slide" class="me-2">
+                            Slide
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex align-items-center" id="arcoscan-tab" data-bs-toggle="tab" data-bs-target="#project4" type="button" role="tab">
+                            <img src="images/arcoscan/thumbnail.png" alt="Arcoscan" class="me-2">
+                            Arcoscan
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex align-items-center" id="promontory-tab" data-bs-toggle="tab" data-bs-target="#project5" type="button" role="tab">
+                            <img src="images/promontory/thumbnail.png" alt="Promontory" class="me-2">
+                            Promontory
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="projectTabContent">
+                <!-- Project 1 (Facebook) -->
+                <div class="tab-pane fade show active" id="project1" role="tabpanel" aria-labelledby="facebook-tab">
+                    <div class="project-content">
+                        <!-- View Toggle -->
+                        <div class="view-toggle mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input view-toggle-input" type="checkbox" role="switch" id="viewToggleFacebook">
+                                <label class="form-check-label" for="viewToggleFacebook">Show Full Case Study</label>
+                            </div>
+                        </div>
+
+                        <!-- Summary View (Default) -->
+                        <div class="project-view summary-view">
+                            <h3>Revamping Public Figures on Facebook</h3>                            
+                            <!-- Objective -->
+                            <div class="summary-section mb-4">
+                                <h5>Objective</h5>
+                                <p>Redesign notification tools and engagement features for public figure accounts on Facebook as part of the <a href="https://www.facebook.com/business/help/2752670058165459?id=418112142508425" target="_blank">2021 Pages experience update</a>.</p>
+                            </div>
+
+                            <!-- Key Contributions -->
+                            <div class="summary-section mb-4">
+                                <h5>Key Contributions</h5>
+                                <ul>
+                                    <li class="mb-3">
+                                        <strong>Admin Notifications Center:</strong> Designed a command center to help admins manage 20,000+ daily notifications through custom settings, tabs, and highlights.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Top Fans Feature:</strong> Created engagement tools to recognize and incentivize loyal followers through badges and achievement notifications.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Design System Integration:</strong> Successfully integrated solutions within Facebook's Design System (FDS) constraints while maintaining innovation.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Design Approach -->
+                            <div class="summary-section mb-4">
+                                <h5>Design Approach</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        Conducted extensive research of previous projects and user interviews to inform design decisions.
+                                    </li>
+                                    <li class="mb-2">
+                                        Collaborated with UX researchers to conduct A/B testing for quantitative validation.
+                                    </li>
+                                    <li class="mb-2">
+                                        Iterated designs based on engineering feedback and technical constraints.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Impact -->
+                            <div class="summary-section mb-5">
+                                <h5>Impact</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        7% increase in task efficiency (time to clear notifications) of public figure admin notifications
+                                    </li>
+                                    <li class="mb-2">
+                                        25% increase in comments and reactions from designated top fans after the quarter following the intial launch
+                                    </li>
+                                    <li class="mb-2">
+                                        11% increase in overall platform engagement public figures and their audiences the quarter following the intial launch
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-images">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <img src="images/facebook/winning_design.png" alt="Project Preview" class="img-fluid rounded shadow-sm mb-2">
+                                        <p class="text-muted text-center"><small>Overview of the Admin Notifications Center</small></p>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <img src="images/facebook/top_fan.png" alt="Project Preview" class="img-fluid rounded shadow-sm mb-2">
+                                        <p class="text-muted text-center"><small>Top Fans feature in action</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Case Study View (Hidden by default) -->
+                        <div class="project-view case-study-view" style="display: none;">
+                            <h3>Revamping Public Figures on Facebook</h3>
+                            
+                            <!-- Introduction -->
+                            <div class="case-study-section mb-5">
+                                <h4>A New Experience</h4>
+                                <p>In 2021, Facebook revealed a <a href="https://www.facebook.com/business/help/2752670058165459?id=418112142508425" target="_blank" rel="noopener noreferrer">new Pages experience</a> to enhance how businesses and public figures can connect with their audiences.</p>
+                                <p>As a Product Designer on the Discovery & Distribution team, I had the privilege of working on two features to help public figures stay connected with their audiences:</p>
+                                <ul>
+                                    <li><strong>Admin Notifications Center:</strong> An entry point to custom settings, tabs, and highlights to allow admins of public figure accounts to have more control over their notifications and make it easier to find.</li>
+                                    <li><strong>Top Fans:</strong> An incentive to make it easier for fans to stand out when engaging with public figure content.</li>
+                                </ul>
+                                <p>These features were sketched, prototyped, and tested with the help of other Designers, UX Researchers, Engineers, PMs, and a Product Design Manager who oversaw the work our team was completing.</p>
+                            </div>
+
+                            <!-- Initial Research -->
+                            <div class="case-study-section mb-5">
+                                <h4>Understanding Previous Efforts</h4>
+                                <p>Immediately after joining the team, I dove into previous research projects that were conducted around public figures to better understand the needs of the admins and audiences.</p>
+                                <p>In doing so, I found research projects from 2019 around features for Facebook Stories. Some of those features were launched, and others were never shipped. I talked to several designers who had worked on those previous efforts and gained a better understanding as to why we were now pushing for admin controls and specific features for the fans.</p>
+                            </div>
+
+                            <!-- Admin Notifications Center -->
+                            <div class="case-study-section mb-5">
+                                <h4>Admin Notifications Center</h4>
+                                <p>My research partner had previously conducted interviews and with public figure admins to better understand their needs, and one area of opportunity was designing a better way for admins to manage their notifications.</p>
+                                <p>Public figure accounts received upwards of 20,000 notifications daily, so I collaborated with my design partner to brainstorm potential solutions that would improve the quality of life for the admins by providing an all-in-one command center with custom settings, tabs, and highlights designed for quicker access.</p>
+                                <p>With an understanding of the current layout of notifications, I sketched potential design layouts that included several of the talking points from the user interviews.</p>
+                                <div class="project-images mb-4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 mb-4">
+                                            <img src="images/facebook/sketch_one.png" alt="Early sketches about the Notifications Center - Part 1" class="img-fluid rounded shadow-sm mb-2">
+                                            <p class="text-muted text-center"><small>Early sketches - Part 1</small></p>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <img src="images/facebook/sketch_two.png" alt="Early sketches about the Notifications Center - Part 2" class="img-fluid rounded shadow-sm mb-2">
+                                            <p class="text-muted text-center"><small>Early sketches - Part 2</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Using the interview responses as my guide, I came up with a few questions to keep in mind as I explored several layouts:</p>
+                                <ul>
+                                    <li>Which notification types should be prioritized? Likes, Comments, etc?</li>
+                                    <li>Should admins be able to configure the tabs that are shown?</li>
+                                    <li>Should there be scrolling tabs off the screen?</li>
+                                    <li>What if another public figure reacts to the post?</li>
+                                </ul>
+                                <p>I reached out to one of our engineers and presented these sketches as a way to call out early technical risks or rabbit holes we may encounter with this solution. One potential risks we discussed was the introduction of "highlights" as a way to prioritize important notifications coming from other public figures, and the technical feasiblity of something like this.</p>
+                                <p>Utilizing a robust design system such as FDS proved to be a bit of a challenge considering the strict rules put in place by Facebook's design system team. Fortunately, they were very responsive and pointed me to the correct components to use for my designs. They even pointed me to one of Facebook's design principles, which is to "<a href="https://www.facebook.com/notes/693790757917796/?_rdr" target="_blank" rel="noopener noreferrer">reduce, reuse, don't redesign</a></p>
+                                <p>I ended up with six variants of this new notifications center and presented them to my design team over a period of two weeks. I also communicated with my research partner to understand if they had a particular research method in mind to test the effectiveness of the new design.
+                                <p>Thanks to my team's feedback, I was able to iterate on the design and land on a final concept that was later tested on users.</p>
+                                <div class="project-images mb-4">
+                                    <img src="images/facebook/six_variants.png" alt="Six variants of Notifications Center" class="img-fluid rounded shadow-sm mb-4">
+                                    <p class="text-muted text-center"><small>Six variants of Notifications Center</small></p>
+                                </div>
+                                <div class="project-images mb-4">
+                                    <img src="images/facebook/winning_design.png" alt="Six variants of Notifications Center" class="img-fluid rounded shadow-sm mb-4">
+                                    <p class="text-muted text-center"><small>Final design</small></p>
+                                </div>
+                            </div>
+
+                             <!-- Research Methods -->
+                             <div class="case-study-section mb-5">
+                                <h4>Choosing a Research Method</h4>
+                                <p>Seeing that we were looking to compare the revamped notifications center against the old one, we agreed upon standard quantitative A/B testing on several segments of public figure accounts. The segments to test on were ultimately decided by our PM and research team. On top of the quantitative tests, I suggested an additional qualitative test to dig deeper into the specific areas of the feature that could be reshaped, but received pushback due to the lack of bandwith from researchers who had to sit in those interviews.</p>
+                                <p>We collaborated on the research project script to make sure we were asking the right questions and would be able to draw conclusions that tied back to our team goals of improving the quality of life for admins through task efficiency.</p>
+                            </div>
+
+                            <!-- Engineering Specs -->
+                            <div class="case-study-section mb-5">
+                                <h4>Engineering Handoff</h4>
+                                <p>With Facebook's robust design system, documenting the components used in the new notifications center was straightforward, especially with the help I received from the design system team.</p>
+                                <p> My main goal during the handoff was to provide extremely detailed documentation and any edge cases they should be aware of. Once in the hands of the developers, I made myself available at all times to answer further questions they had about the design.</p>
+                                <div class="project-images mb-4">
+                                    <img src="images/facebook/anatomy.png" alt="Six variants of Notifications Center" class="img-fluid rounded shadow-sm mb-4">
+                                    <p class="text-muted text-center"><small>Component anatomy</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Top Fans Section -->
+                            <div class="case-study-section mb-5">
+                                <h4>Top Fans</h4>
+                                <p>As another way of connecting public figures and their audiences, our team also explored a previous research project that was conducted around Top Fans, which aimed at providing incentives to dedicated followers of public figures. This initiative aimed to gamify the experience and make it easier to stand out among other fans.</p>
+                                <p>Previous research had shown that fans were more likely to engage with public figures if they were recognized for their loyalty. I began working closely with the PM to define what success looked like for this feature, and the constraints of the visual design for this feature.</p>
+                                <p>To understand the visual constraints of the feature, I reached out to the visual design team and asked them to show me the current visual language for badges. This allowed me to build the feature in a way that felt cohesive with the rest of the Facebook Design System.</p>
+                            </div>
+
+                             <!-- Research Methods -->
+                             <div class="case-study-section mb-5">
+                                <h4>Concept Testing</h4>
+                                <p>After crafting several versions of the feature and presenting them to the design team, I landed on a simple icon next to the fan's name to not obstruct the content of the post. I prototyped an end-to-end experience in Figma to serve as our initial concept test to test engagement and adoption of this new feature.</p>
+                                <p>Working closely with our researcher, we outlined the flow of the test and crafted a handful of questions for the interview. For this particular test, we added both qualitative and quantitative questions that would allow us to synthesize more data in the future.</p>
+                                
+                                <div class="project-images mb-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="images/facebook/badge_intro.png" alt="Admin entry point" class="img-fluid rounded shadow-sm mb-4">
+                                            <p class="text-muted text-center"><small>Intro to Top Fans</small></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/facebook/earn_badge.png" alt="Manage Top Fan badges" class="img-fluid rounded shadow-sm mb-4">
+                                            <p class="text-muted text-center"><small>Earn Top Fans badge</small></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/facebook/display_badge.png" alt="Top Fan badge settings" class="img-fluid rounded shadow-sm mb-4">
+                                            <p class="text-muted text-center"><small>Display Top Fans badge</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Key Screens -->
+                            <div class="case-study-section mb-5">
+                                <h4>Building the Experience</h4>
+                                <p>After synthesizing the insights from five interviews, the PM gave us the green light to move forward with this feature and build out the rest of the experience, including any edge cases that may arise.</p>
+                                <p>To dig deeper into the insights, we crafted the new end-to-end prototype as a usability test to test the effectiveness of badges, adoption of the feature, and overall satisfaction of the user. </p>
+                                <p>This new prototype was refined and tested with several more users to ensure we were on the right track.</p>
+                            </div>
+
+                            <!-- Engineering Specs -->
+                            <div class="case-study-section mb-5">
+                                <h4>Engineering Handoff</h4>
+                                <p>As my contract was coming to an end, I worked with my design partner to document the components used in this experience and presenting any edge cases they should be aware of.</p>
+                                <p>Keeping strong communication lines between myself and the Facebook team allowed me stay close to the project while not directly being involved in the launch of this feature.</p>
+                            </div>
+
+                            <!-- Results -->
+                            <div class="case-study-section mb-5">
+                                <h4>Stronger Connections and Higher Engagement</h4>
+                                <p>We observed positive task efficiency on the admin notifications center, but not positive enough to ship live to the entire user base. Top Fans, on the other hand, saw moderate adoption and was able to be shipped successfully.<p>
+                                    <ul>
+                                        <li>Notifications center saw a 7% increase in task efficiency (time to clear notifications)</li>
+                                        <li>Top Fans saw a 25% increase in comments and reactions from designated top fans after the quarter following the intial launch</li>
+                                        <li>Overall platform engagement saw a 11% increase between public figures and their audiences the quarter following the intial launch</li>
+                                    </ul>
+                                <p>As an external hire, these results were communicated to me after my contract ended. Had I stayed on the team longer, I would have loved to conduct more qualitative studies to understand why the notifications center didn't perform as well as Top Fans. Could it be that public figure admins don't care to read through all their notifications?</p>
+                                
+                                <div class="project-images mb-4">
+                                    <img src="images/facebook/top_fan.png" alt="Graph showing increased engagement" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Top Fans live on Facebook</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Learnings -->
+                            <div class="case-study-section">
+                                <h4>Lessons Learned</h4>
+                                <p>This was my first project at a large-scale company and taught me a lot about effective collaboration and communication across teams.</p>
+                                <p>It also reinforced the importance of balancing innovation with user familiarity. With Facebook being as massive it is, it's crucial to stick to the boundaries of the design system to successfully create new features that feel both fresh and intuitive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Square) -->
+                <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="square-tab">
+                    <div class="project-content">
+                        <!-- View Toggle -->
+                        <div class="view-toggle mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input view-toggle-input" type="checkbox" role="switch" id="viewToggleSquare">
+                                <label class="form-check-label" for="viewToggleSquare">Show Full Case Study</label>
+                            </div>
+                        </div>
+
+                        <!-- Summary View -->
+                        <div class="project-view summary-view">
+                            <h3>Square: Email Security Redesign</h3>
+                            
+                            <!-- Objective -->
+                            <div class="summary-section mb-4">
+                                <h5>Objective</h5>
+                                <p>Combat rising phishing scams by creating standardized email designs across Square's departments to help sellers easily identify legitimate communications.</p>
+                            </div>
+
+                            <!-- Key Contributions -->
+                            <div class="summary-section mb-4">
+                                <h5>Key Contributions</h5>
+                                <ul>
+                                    <li class="mb-3">
+                                        <strong>Email Design System:</strong> Created a modular, scalable email design system that covered 90% of use cases across seven departments.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Stakeholder Workshops:</strong> Led weekly workshops with department stakeholders to understand specific needs while maintaining security standards.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>User Testing:</strong> Collaborated with researchers to test new designs against original emails, achieving 22% improvement in identification accuracy.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Design Approach -->
+                            <div class="summary-section mb-4">
+                                <h5>Design Approach</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        Analyzed previous seller interviews that had difficulty distinguishing legitimate Square emails.
+                                    </li>
+                                    <li class="mb-2">
+                                        Created and tested designs with sellers before implementing across departments.
+                                    </li>
+                                    <li class="mb-2">
+                                        Integrated components into Contentful for faster implementation.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Impact -->
+                            <div class="summary-section mb-5">
+                                <h5>Impact</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        22% increase in seller confidence in identifying legitimate Square emails
+                                    </li>
+                                    <li class="mb-2">
+                                        12.5% decrease in reported phishing attempts
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project-images">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4">
+                                        <img src="images/square/original_one.png" alt="Original email" class="img-fluid rounded shadow-sm mb-2">
+                                        <p class="text-muted text-center"><small>Original email</small></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/square/after_one.png" alt="With new design components" class="img-fluid rounded shadow-sm mb-2">
+                                        <p class="text-muted text-center"><small>With new design components</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-images">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4">
+                                        <img src="images/square/original_2.png" alt="Original email" class="img-fluid rounded shadow-sm mb-2">
+                                        <p class="text-muted text-center"><small>Original email</small></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/square/after_two.png" alt="With new design components" class="img-fluid rounded shadow-sm mb-2">
+                                        <p class="text-muted text-center"><small>With new design components</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Case Study View -->
+                        <div class="project-view case-study-view" style="display: none;">
+                            <h3>Square: Email Security</h3>
+                            
+                            <!-- Introduction -->
+                            <div class="case-study-section mb-5">
+                                <h4>Trouble Phishing</h4>
+                                <p>In 2020, Square experienced a significant increase in phishing scams via email, resulting in millions of dollars lost by Square sellers who were unable to recover their funds.</p>
+                                <p>This prompted Square to double down on their fraud prevention efforts, including an overhaul of their emailing templates.</p>
+                            </div>
+
+                            <!-- Role Overview -->
+                            <div class="case-study-section mb-5">
+                                <h4>Research History</h4>
+                                <p>As an external hire joining the Risk team, I had several one-on-ones with cross-functional team members during my first week and was made aware of a recent survey that stated 62% out of 1,400 Square sellers had difficulty distinguishing legitimate Square emails from scams due to inconsistent branding and design.</p>
+                                <p>We also knew the lack of confidence from Square sellers was due to inconsistent branding and design because previous interviews were conducted and four out of the five (80%) sellers interviewed were unable to confidently distinguish between a phishing email and a real one. The lone seller was able to distinguish between the two because she had recently received a real Square email and was able to recall the design.</p>
+                                <div class="project-images md-8">
+                                    <img src="images/square/phishing_or_real.png" alt="Illustration of fragmented email designs across departments" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Can you spot the phishing attempt?</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Role Overview -->
+                            <div class="case-study-section mb-5">
+                                <h4>New Efforts</h4>
+                                <p>In an effort to increase confidence among sellers and reduce the number of scams, we decided to overhaul the email templates used by Square and create a more unified email design system that would be recognizable to all readers, internally and externally.</p>
+                                <p>I had the unique opportunity of owning parts of the new email design system, which was a pseudo design system in an effort to reach proper design standardization. These efforts included working with the product owner to define the scope of the project and working with the UX Writer to understand the brand guidelines. Not to mention my weekly check-ins with fellow Product Designers, UX Researchers, and the Product Design Manager.</p>
+                            </div>
+
+                            <!-- Process -->
+                            <div class="case-study-section mb-5">
+                                <h4>Getting Buy-In</h4>
+                                <p>To gain buy-in for this new initiative, I conducted weekly workshops with stakeholders from each department alongside my design partner to understand their specific needs, while communicating our concerns and design goals.</p>
+                                <div class="project-images mb-4">
+                                    <img src="images/square/figjam.png" alt="Illustration of fragmented email designs across departments" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Can you spot the phishing attempt?</small></p>
+                                </div>
+                                <p>After every workshop, I added each department's emails into a Figma file until we had a comprehensive list and deep understanding of the current state of the email designs.</p>
+                                <div class="project-images mb-4">
+                                    <img src="images/square/all_departments.png" alt="Illustration of fragmented email designs across departments" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Can you spot the phishing attempt?</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Testing -->
+                            <div class="case-study-section mb-5">
+                                <h4>Testing and Iterations</h4>
+                                <p>In order to test our hypothesis of improving seller confidence by enhancing the email designs, I utilized the existing Market design system to create a set of revamped emails that followed a familiar design pattern, regardless of department.</p>
+                                <p>I collaborated with the UX Researcher to outline a new research project to qualitatively and quantitatively test the newly designed emails against our original emails, which only had a 38% success rate.</p>
+                                <div class="project-images">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-4">
+                                            <img src="images/square/original_one.png" alt="Original email" class="img-fluid rounded shadow-sm mb-2">
+                                            <p class="text-muted text-center"><small>Original email</small></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/square/after_one.png" alt="With new design components" class="img-fluid rounded shadow-sm mb-2">
+                                            <p class="text-muted text-center"><small>With new design components</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-images">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-4">
+                                            <img src="images/square/original_2.png" alt="Original email" class="img-fluid rounded shadow-sm mb-2">
+                                            <p class="text-muted text-center"><small>Original email</small></p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/square/after_two.png" alt="With new design components" class="img-fluid rounded shadow-sm mb-2">
+                                            <p class="text-muted text-center"><small>With new design components</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>After conducting qualitative usability tests with five users, we observed a 25% improvement in their ability to identify legitimate Square emails. Based on this feedback, my design partner and I refined the designs further, particularly focusing on creating consistent body, header, and footer components that could be highly modular across all departments.</p>
+                                <p>The goal was now to conduct a large-scale survey to test the new emails against the original emails, which had a 38% success rate.</p>
+                            </div>
+
+                             <!-- Scaling the Components -->
+                             <div class="case-study-section mb-5">
+                                <h4>Scaling the Components</h4>
+                                <p>To properly serve a large-scale organization like Square, we needed to create constraints to the email layout to ensure consistency across the company.</p>
+                                <p>With the help of my design partner and PM, we dissected the general makeup of each email type and were able to distill the vast majority of the emails down to a handful of modular components, effectively creating a mini design system for email layout.</p>
+                                <p>We created all the necessary designs and components using Figma, and uploaded the HTML direclty into Contenful for faster implementation.</p>
+                                <div class="project-images">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-center" style="width: 30%;">
+                                                    <img src="images/square/header.png" alt="Header components" class="img-fluid rounded shadow-sm mb-2">
+                                                    <p class="text-muted"><small>Header</small></p>
+                                                </div>
+                                                <div class="text-center" style="width: 30%;">
+                                                    <img src="images/square/body.png" alt="Body components" class="img-fluid rounded shadow-sm mb-2">
+                                                    <p class="text-muted"><small>Body</small></p>
+                                                </div>
+                                                <div class="text-center" style="width: 30%;">
+                                                    <img src="images/square/footer.png" alt="Footer components" class="img-fluid rounded shadow-sm mb-2">
+                                                    <p class="text-muted"><small>Footer</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Results -->
+                            <div class="case-study-section mb-5">
+                                <h4>A Safer, More Trusted Platform</h4>
+                                <p>The results of our efforts were gradual, and six months after the launch of our new email designs we starting seeing the fruits of our labor:</p>
+                                <ul>
+                                    <li><strong>Seller Confidence Soared:</strong> Going back to our original benchmark, we observed an 82% confidence score in sellers identifying legitimate Square emails, a 22% increase compared to the previous survey results. This boost in trust is invaluable for maintaining strong, long-term relationships with our sellers.</li>
+                                    <li><strong>Phishing Attempts Plummeted:</strong> We saw a 12.5% decrease in reported phishing attempts, a clear indication that our standardized design was making it easier for sellers to identify legitimate Square communications.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Conclusion -->
+                            <div class="case-study-section">
+                                <h4>The Power of Design in Security</h4>
+                                <p>This project taught me many valuable lessons about the role of design in security. By creating a consistent, easily recognizable email design, we were able to significantly enhance our sellers' ability to identify legitimate Square communications, and in turn protect them from financial loss.</p>
+                                <p>If I had stayed on the team longer, I would have loved to explore exactly why the new emails worked so well. Were the fraudsters really deterred by the new design? Did they no longer pursue Square sellers after the COVID spike?</p>
+                                <p>Overall, I'm proud of the work we did and the impact we had on Square's email security.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Slide) -->
+                <div class="tab-pane fade" id="project3" role="tabpanel" aria-labelledby="slide-tab">
+                    <div class="project-content">
+                        <!-- View Toggle -->
+                        <div class="view-toggle mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input view-toggle-input" type="checkbox" role="switch" id="viewToggleSlide">
+                                <label class="form-check-label" for="viewToggleSlide">Show Full Case Study</label>
+                            </div>
+                        </div>
+
+                        <!-- Summary View -->
+                        <div class="project-view summary-view">
+                            <h3>Shaping Slide's New & Improved Claim Process</h3>
+                            
+                            <!-- Objective -->
+                            <div class="summary-section mb-4">
+                                <h5>Objective</h5>
+                                <p>Create a self-service claims process for Slide Insurance during their acquisition of 163,000 policy holders, eliminating the need for human representatives while maintaining user satisfaction.</p>
+                            </div>
+
+                            <!-- Key Contributions -->
+                            <div class="summary-section mb-4">
+                                <h5>Key Contributions</h5>
+                                <ul>
+                                    <li class="mb-3">
+                                        <strong>Design Sprint Leadership:</strong> Led a week-long GV Design Sprint in Tampa, facilitating stakeholder discussions and rapid prototyping.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Design System Development:</strong> Created Slide's first design system using Tailwind CSS for scalable, consistent implementation.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>User Testing:</strong> Conducted comprehensive testing with policy holders and executives to validate solutions.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Impact -->
+                            <div class="summary-section mb-4">
+                                <h5>Impact</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        89% completion rate for new claim process
+                                    </li>
+                                    <li class="mb-2">
+                                        60% reduction in claim completion time (20 min to 8 min)
+                                    </li>
+                                    <li class="mb-2">
+                                        45% decrease in customer support calls
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Case Study View -->
+                        <div class="project-view case-study-view" style="display: none;">
+                            <h3>Shaping Slide's New & Improved Claim Process</h3>
+                            
+                            <!-- Background -->
+                            <div class="case-study-section mb-5">
+                                <h4>Background</h4>
+                                <p>Slide Insurance, a Florida-based insurer, was preparing to acquire 163,000 policy holders from an incumbent who was going out of business. They approached Underbelly with a challenge: Create a self-serviced version of their 'File a Claim' process that would seamlessly integrate new and existing users, without requiring human representatives.</p>
+                            </div>
+
+                            <!-- Design Sprint -->
+                            <div class="case-study-section mb-5">
+                                <h4>First, We Sprint</h4>
+                                <p>To truly understand the main problem and user needs, my team embarked on a week-long trip to Tampa, Florida to meet with Slide's executive team and insurance experts.</p>
+                                
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/executive-team.png" alt="Slide's executive team" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Slide's executive team</small></p>
+                                </div>
+
+                                <p>As a team of three (a full-stack developer, a product manager, and myself), we conducted the Google Ventures Design Sprint to rapidly ideate and validate our assumptions. This consisted of jam-packed 9-5 days, along with late nights to distill our learnings.</p>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/sprint-schedule.png" alt="Design sprint schedule" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Design sprint schedule</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Role and Responsibilities -->
+                            <div class="case-study-section mb-5">
+                                <h4>My Role</h4>
+                                <p>As the lead designer, my responsibilities included:</p>
+                                <ul>
+                                    <li>Conducting roundtable discussions with stakeholders to guide design decisions.</li>
+                                    <li>Creating wireframes, prototypes, and high-fidelity designs.</li>
+                                    <li>Collaborating closely with our developer to ensure technical feasibility and implementation of design elements.</li>
+                                    <li>Leading user testing sessions and incorporating feedback into design iterations.</li>
+                                    <li>Developing a scalable design system and ensuring consistency across the platform.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Constraints -->
+                            <div class="case-study-section mb-5">
+                                <h4>Adding some Constraints</h4>
+                                <p>As you may imagine, we came up with dozens of possible features and solution implementations for our core problem.</p>
+                                <p>Ultimately, we had to narrow down our focus to a few key areas.</p>
+                                
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/constraints.png" alt="Key focus areas and constraints for Slide Insurance" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Key focus areas and constraints for our solution</small></p>
+                                </div>
+
+                                <p>As a collective, we agreed on a core user flow that had the necessary features to solve the problem, and that we could build in a week.</p>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/flow-top.png" alt="Core user flow diagram - top section" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Core user flow diagram - top section</small></p>
+                                </div>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/flow-bottom.png" alt="Core user flow diagram - bottom section" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Core user flow diagram - bottom section</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Scalability -->
+                            <div class="case-study-section mb-5">
+                                <h4>Scalability and Future-Proofing</h4>
+                                <p>Slide did not have a design system or UI kit for their existing application, so we decided to set them up with one. We utilized Tailwind to start componentizing some of the work we were doing. Tailwind was the framework of choice for our developer, and our stakeholders were happy with it.</p>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/tailwind-ui.png" alt="Tailwind styles applied to the UI" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Tailwind styles applied to the UI</small></p>
+                                </div>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/components.png" alt="Componentizing our work for future uses" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Componentizing our work for future uses</small></p>
+                                </div>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/claims-flow.png" alt="Claims flow with Tailwind styles applied" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Claims flow with Tailwind styles applied</small></p>
+                                </div>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/interface.png" alt="Simplified, user-friendly claim interface" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Simplified, user-friendly claim interface</small></p>
+                                </div>
+                            </div>
+
+                            <!-- Sprint Week Results -->
+                            <div class="case-study-section mb-5">
+                                <h4>End of Sprint Week</h4>
+                                <p>On the fifth and final day of our design sprint, we conducted user testing sessions with five policy holders and three Slide executives. This step was crucial in validating our prototype and gathering real-world feedback. We set up two rooms: one for interviews and another for the sprint team to observe.</p>
+                                
+                                <p>As the lead designer, I prepared our prototype and crafted some interview questions to guide the sessions. We carefully observed user interactions, paying attention to both verbal and non-verbal cues. This process provided invaluable insights into the effectiveness of our claims process, helping us identify strengths and areas for improvement. The immediate feedback allowed us to quickly assess which ideas worked, which didn't, and informed our next steps for refining the product.</p>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/testing-session.png" alt="User testing session during design sprint" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>User testing session during design sprint</small></p>
+                                </div>
+
+                                <p>This was one of the most challenging things I've done in my design career, but it was also one of the most rewarding. Everyone came out of that room extremely satisfied with the results of the sprint, and Slide even agreed to sign an additional 3-month contract to get the prototype into production.</p>
+                            </div>
+
+                            <!-- Development Phase -->
+                            <div class="case-study-section mb-5">
+                                <h4>3-Month Product Development Phase</h4>
+                                <p>Following the sprint, I went back to managing my design team, but I continued to work closely with the Slide team to refine the product.</p>
+                                
+                                <p>This 3-month phase included:</p>
+                                <ul>
+                                    <li><strong>Iterative Design Refinement:</strong> Weekly design reviews, continuous iteration based on user feedback, and optimization of user flows.</li>
+                                    <li><strong>Development of Comprehensive Design System:</strong> Continuing to create a scalable design system using Tailwind CSS, including a component library and documented guidelines.</li>
+                                    <li><strong>Cross-functional Collaboration and Testing:</strong> Working closely with engineering, product, and design teams to conducted regular user testing and A/B testing to optimize the claims process.</li>
+                                    <li><strong>Performance, Accessibility, and Compliance:</strong> Ensuring fast load times, WCAG 2.1 AA compliance, and adherence to insurance industry regulations while maintaining a user-friendly interface.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Results -->
+                            <div class="case-study-section mb-5">
+                                <h4>Efficiency, Satisfaction, and Trust</h4>
+                                <p>The results of our efforts were transformative:</p>
+                                
+                                <ul>
+                                    <li><strong>Self-Serviceability:</strong> We achieved an impressive 89% completion rate for the new claim process, indicating that users found it intuitive and manageable.</li>
+                                    <li><strong>Time Efficiency:</strong> We dramatically reduced the average time to complete a claim from 20 minutes to just 8 minutes - a 60% improvement that significantly eased user frustration.</li>
+                                    <li><strong>Reduced Support Needs:</strong> Most important of all, we saw a 45% decrease in customer support calls related to the claim process. This not only indicated a more self-serviceable system but also translated to significant operational savings for Slide.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Conclusion -->
+                            <div class="case-study-section">
+                                <h4>Design-Driven Growth</h4>
+                                <p>The success of this sprint + development phase demonstrates the critical role of design in driving business growth, enhancing user satisfaction, and creating scalable solutions. As Lead Designer, I'm proud to have guided this project from concept to implementation, delivering tangible results that positively impacted both users and the business.</p>
+                                
+                                <p>Slide's new and improved claims process has positioned them to be one of the top insurance companies in Florida. In fact, Slide recently acquired the renewal rights for Farmers Insurance homeowners policies in the state. This added an additional 86,000 policy holders to their platform.</p>
+
+                                <div class="project-images mb-4">
+                                    <img src="images/slide/farmers-acquisition.png" alt="Slide acquires Farmers Insurance homeowners policies in Florida" class="img-fluid rounded shadow-sm mb-2">
+                                    <p class="text-muted text-center"><small>Slide's new claims process</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Arcoscan) -->
+                <div class="tab-pane fade" id="project4" role="tabpanel">
+                    <div class="password-overlay" data-project="arcoscan">
+                        <div class="password-content">
+                            <h3 class="mb-4">Protected Content</h3>
+                            <p class="mb-4">Please enter the password to view this project.</p>
+                            <div class="password-form">
+                                <div class="d-flex gap-2 justify-content-center">
+                                    <input type="password" class="form-control password-input" placeholder="Enter password">
+                                    <button class="password-submit btn btn-primary">Submit</button>
+                                </div>
+                                <p class="password-error text-danger mt-3" style="display: none;">Incorrect password</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <!-- Rest of Arcoscan content -->
+                    </div>
+                </div>
+
+                <!-- Project 5 (Promontory) -->
+                <div class="tab-pane fade" id="project5" role="tabpanel">
+                    <div class="password-overlay" data-project="promontory">
+                        <div class="password-content text-center">
+                            <h3 class="mb-4">Protected Content</h3>
+                            <p class="mb-4">Please enter the password to view this project.</p>
+                            <div class="password-form">
+                                <div class="d-flex gap-2">
+                                    <input type="password" class="form-control password-input" placeholder="Enter password">
+                                    <button class="password-submit btn btn-primary">Submit</button>
+                                </div>
+                                <p class="password-error text-danger mt-3" style="display: none;">Incorrect password</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <!-- View Toggle -->
+                        <div class="view-toggle mb-4">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input view-toggle-input" type="checkbox" role="switch" id="viewTogglePromontory">
+                                <label class="form-check-label" for="viewTogglePromontory">Show Full Case Study</label>
+                            </div>
+                        </div>
+
+                        <!-- Summary View -->
+                        <div class="project-view summary-view">
+                            <h3>The Promontory</h3>
+                            <h4 class="text-muted mb-4">LinkedIn for Investors</h4>
+                            
+                            <div class="project-images mb-4">
+                                <img src="images/promontory-logo.png" alt="Promontory Logo" class="img-fluid rounded shadow-sm mb-2">
+                            </div>
+                            
+                            <!-- Objective -->
+                            <div class="summary-section mb-4">
+                                <h5>Objective</h5>
+                                <p>Create the "LinkedIn for Investors" by building a platform that brings clarity and connection to the complex world of fund data.</p>
+                            </div>
+
+                            <!-- Key Contributions -->
+                            <div class="summary-section mb-4">
+                                <h5>Key Contributions</h5>
+                                <ul>
+                                    <li class="mb-3">
+                                        <strong>Platform Design:</strong> Led the design of an intuitive interface for complex startup data.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>User Research:</strong> Conducted extensive research to understand GP and LP needs.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Cross-functional Leadership:</strong> Collaborated closely with engineering and CEO.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Impact -->
+                            <div class="summary-section mb-4">
+                                <h5>Impact</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        $2M in funding raised
+                                    </li>
+                                    <li class="mb-2">
+                                        $20M company valuation
+                                    </li>
+                                    <li class="mb-2">
+                                        Significant market differentiation achieved
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Case Study View -->
+                        <div class="project-view case-study-view" style="display: none;">
+                            <h3>The Promontory</h3>
+                            <h4 class="text-muted mb-4">LinkedIn for Investors</h4>
+                            
+                            <div class="project-images mb-4">
+                                <img src="images/promontory-logo.png" alt="Promontory Logo" class="img-fluid rounded shadow-sm mb-2">
+                            </div>
+                            
+                            <!-- Introduction -->
+                            <div class="case-study-section mb-5">
+                                <h4>Revolutionizing Investor Networking: The Promontory Story</h4>
+                                <p>As the Lead Designer at The Promontory, I spearheaded an ambitious project to create the "LinkedIn for Investors." Our vision was to bring clarity and connection to the complex world of fund data, addressing the limitations of existing platforms like PitchBook, Crunchbase, and CB Insights.</p>
+                            </div>
+
+                            <!-- Challenge -->
+                            <div class="case-study-section mb-5">
+                                <h4>Standing Out in a Saturated Market</h4>
+                                <p>The landscape of startup data platforms was already crowded, presenting us with a multifaceted challenge:</p>
+                                <ul>
+                                    <li><strong>Differentiation:</strong> We needed to create a platform that offered unique value in a market saturated with established players.</li>
+                                    <li><strong>Data Accuracy:</strong> Our platform had to provide more comprehensive and accurate data than our competitors to truly stand out.</li>
+                                    <li><strong>User Experience:</strong> We aimed to design an intuitive interface that could make complex startup data easily digestible and shareable.</li>
+                                    <li><strong>Targeted Features:</strong> Our solution needed to cater specifically to the needs of both General Partners (GPs) and Limited Partners (LPs).</li>
+                                    <li><strong>Balancing Depth and Usability:</strong> We had to strike a delicate balance between providing in-depth information and maintaining a user-friendly design to encourage adoption and regular use.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Process -->
+                            <div class="case-study-section mb-5">
+                                <h4>Data-Driven Design and Strategic Collaboration</h4>
+                                <p>To tackle these challenges, we implemented a comprehensive strategy:</p>
+                                <ul>
+                                    <li><strong>Data Accuracy Focus:</strong> We developed robust data collection and verification processes, ensuring our platform offered the most accurate and comprehensive startup data available.</li>
+                                    <li><strong>User-Centric Design:</strong> Through extensive research and iterative design, we created an intuitive interface that presents complex data in easily digestible formats, tailored to the specific needs of investors.</li>
+                                    <li><strong>Collaborative Features:</strong> We implemented sharing capabilities that allow easy exchange of data and insights among GPs and LPs, fostering a collaborative investor community.</li>
+                                    <li><strong>Cross-Functional Collaboration:</strong> I worked closely with the head of engineering and CEO on a daily basis, ensuring our design aligned perfectly with the strategic roadmap and technical capabilities.</li>
+                                    <li><strong>Agile Development:</strong> We adopted an iterative approach, continuously refining the platform based on user feedback and emerging investor needs.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Results -->
+                            <div class="case-study-section mb-5">
+                                <h4>Validation and Growth</h4>
+                                <p>Our efforts yielded significant results:</p>
+                                <ul>
+                                    <li><strong>Successful Fundraising:</strong> We raised $2 million in funding, demonstrating strong investor confidence in our platform.</li>
+                                    <li><strong>High Valuation:</strong> The company achieved a valuation of $20 million, indicating substantial market potential and validating our approach.</li>
+                                    <li><strong>Continuous Improvement:</strong> We're currently focused on expanding our data sources to further enhance the platform's value proposition.</li>
+                                    <li><strong>Enhanced User Experience:</strong> We're streamlining the onboarding process to increase user adoption among investors, based on initial user feedback.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Lessons -->
+                            <div class="case-study-section mb-5">
+                                <h4>The Power of Focus and Collaboration</h4>
+                                <p>This project reinforced several crucial lessons:</p>
+                                <ul>
+                                    <li><strong>Data is King:</strong> In the world of investor platforms, the accuracy and comprehensiveness of data is paramount. Our focus on data quality set us apart from competitors.</li>
+                                    <li><strong>User-Centric Design Matters:</strong> By tailoring our design to the specific needs of investors, we created a platform that resonates with our target audience.</li>
+                                    <li><strong>Collaboration is Key:</strong> The close collaboration between design, engineering, and leadership was crucial in aligning our product with both user needs and business goals.</li>
+                                    <li><strong>Iterative Development Wins:</strong> Our agile approach allowed us to continuously improve the platform based on real user feedback, ensuring we're always meeting evolving investor needs.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Conclusion -->
+                            <div class="case-study-section">
+                                <h4>Shaping the Future of Investor Networking</h4>
+                                <p>The success of The Promontory demonstrates the potential for innovative design to disrupt established markets and create new value for users. As we continue to enhance our data offerings and refine the user experience, we're poised to revolutionize how investors access, analyze, and share startup data.</p>
+                                <p>Our journey is far from over. With a strong foundation in place, we're excited to continue pushing the boundaries of what's possible in investor networking and startup data analysis. The Promontory is not just a platform; it's a new paradigm for how investors connect, collaborate, and make decisions in the fast-paced world of startups and venture capital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What People Say</h2>
+            <div class="row g-4 d-flex align-items-stretch">
+                <!-- Testimonial 1 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card border-0 shadow-sm testimonial-card w-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images/terri.jpeg" class="testimonial-avatar rounded-circle me-3" alt="Client Name">
+                                <div>
+                                    <h5 class="card-title mb-0">Terri Bedel</h5>
+                                    <p class="text-muted mb-0">Design Program Manager, Facebook</p>
+                                </div>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-3"></i>
+                            <p class="card-text mt-2">
+                                "Martin impressed the team with this ability to grasp our design system quikly and become an effective contributor almost immediately."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card border-0 shadow-sm testimonial-card w-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images/bryan.jpeg" class="testimonial-avatar rounded-circle me-3" alt="Client Name">
+                                <div>
+                                    <h5 class="card-title mb-0">Bryan Rees</h5>
+                                    <p class="text-muted mb-0">Product Design Manager, Square</p>
+                                </div>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-3"></i>
+                            <p class="card-text mt-2">
+                                "Martin delivered on initial needs must faster than anticpiated, which allowed for more time to work on our email design system."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card border-0 shadow-sm testimonial-card w-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images/bruce.jpeg" class="testimonial-avatar rounded-circle me-3" alt="Client Name">
+                                <div>
+                                    <h5 class="card-title mb-0">Bruce Lucas</h5>
+                                    <p class="text-muted mb-0">CEO, Slide</p>
+                                </div>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-3"></i>
+                            <p class="card-text mt-2">
+                                "Martin was integral in addressing our needs and creating an amazing app we could run with"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="col-md-3 d-flex">
+                    <div class="card border-0 shadow-sm testimonial-card w-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="images/anthony.jpeg" class="testimonial-avatar rounded-circle me-3" alt="Client Name">
+                                <div>
+                                    <h5 class="card-title mb-0">Anthony Lagoon</h5>
+                                    <p class="text-muted mb-0">CEO, Underbelly</p>
+                                </div>
+                            </div>
+                            <i class="bi bi-quote text-primary fs-3"></i>
+                            <p class="card-text mt-2">
+                                "Martin has been such a positive impact on the team in so many ways. Few people have his level of drive and ambition."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (modified) -->
+    <footer class="footer py-4 bg-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <span class="text-muted">&copy; 2024 Martin Tejeda. Thanks for stopping by 👋</span>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#home" class="text-decoration-none text-muted">
+                        Back to top ☝️
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Add this at the bottom of your body tag, before the scripts -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-white bg-opacity-5">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img src="" class="img-fluid" alt="Full size image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
