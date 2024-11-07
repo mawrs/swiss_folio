@@ -378,23 +378,11 @@ body {
     display: inline; /* Ensure gradient text flows properly within highlight */
 }
 
-/* Password Protection Styles - consolidated version */
-.password-overlay {
-    position: relative;
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    padding: 2rem;
-    margin: 0;
-}
 
 .password-content {
     width: 100%;
     text-align: center;
-    padding: 0 1rem;
+    padding: 2rem;
 }
 
 .password-form {
@@ -546,13 +534,16 @@ body {
 
 /* Password Overlay Styling */
 .password-overlay {
-    padding: 2rem;
-    background: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
+        position: relative;
+        width: 100%;
+        min-height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        padding: 2rem;
+        margin: 0;
+        border: 1px solid #dee2e6;
 }
 
 /* Sticky Tabs Styling */
@@ -604,24 +595,46 @@ body {
 
 /* Modal styling */
 #imageModal .modal-dialog {
-    max-width: 90vw;
+    max-width: 95vw; /* Slightly wider */
+    max-height: 95vh; /* Control maximum height */
+    margin: 1rem auto; /* Center vertically and horizontally */
 }
 
 #imageModal .modal-content {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95); /* Slightly darker background */
+    height: calc(95vh - 2rem); /* Account for margin */
+    display: flex;
+    flex-direction: column;
+}
+
+#imageModal .modal-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#imageModal .modal-body img {
+    max-height: 90vh; /* Taller maximum height */
+    max-width: 95%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 #imageModal .btn-close {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     z-index: 1050;
+    background-color: white; /* Make close button more visible */
+    opacity: 0.8;
+    padding: 0.75rem;
 }
 
-#imageModal .modal-body img {
-    max-height: 85vh;
-    width: auto;
-    max-width: 100%;
+#imageModal .btn-close:hover {
+    opacity: 1;
 }
 
 /* Ensure main content pushes footer down on short pages */
@@ -922,4 +935,14 @@ main {
 .footer .text-md-end .text-muted {
     transition: all 0.2s ease-in-out;
     color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Update the input group to be centered */
+.password-form .d-flex {
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.password-form .form-control {
+    max-width: 300px; /* Optional: limit input width while keeping container full-width */
 }
